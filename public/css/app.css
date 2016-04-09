@@ -5815,6 +5815,9 @@ body {
 .custom-well h2 {
   font-family: 'Roboto', sans-serif; }
 
+.add-cashier {
+  margin-top: 10px; }
+
 .custom-well {
   background-color: #ffffff;
   border-radius: 5px;
@@ -5830,5 +5833,11 @@ body {
 
 .custom-well .btn-lg, .custom-well .btn-group-lg > .btn {
   font-size: 15px; }
+
+.table tbody > tr > td.vert-align {
+  vertical-align: middle; }
+
+.pointer:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=app.css.map */

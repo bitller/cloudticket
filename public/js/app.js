@@ -24082,18 +24082,23 @@ Vue.config.debug = true;
 
 
 new Vue({
-  /**
-   * Target element.
-   */
-  el: '#cloud_ticket',
+    /**
+     * Target element.
+     */
+    el: '#cloud_ticket',
 
-  /**
-   * Application components.
-   */
-  components: {
-    'register': _Register2.default,
-    'login': _LogIn2.default
-  }
+    /**
+     * Application components.
+     */
+    components: {
+        'register': _Register2.default,
+        'login': _LogIn2.default
+    }
+});
+
+$(document).ready(function () {
+    // Initialize tooltips
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 },{"./components/LogIn.vue":31,"./components/Register.vue":32,"bootstrap-sass":1,"jquery":2,"vue":29,"vue-resource":18}],31:[function(require,module,exports){

@@ -27,3 +27,8 @@ new Vue({
         'login': LogIn
     }
 });
+
+$(document).ready(function() {
+    // Initialize tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+});
