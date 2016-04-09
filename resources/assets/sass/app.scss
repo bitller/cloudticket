@@ -1,3 +1,8 @@
 @import "colors";
+@import "text_colors";
+@import "buttons";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "layout_base";
+@import "layout_base.scss";
+@import "pages/auth.scss";
+@import "custom-well.scss";
+@import "custom_input.scss";

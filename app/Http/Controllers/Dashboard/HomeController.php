@@ -8,10 +8,15 @@ use App\Http\Controllers\Controller;
  *
  * @author Alexandru Bugarin <alexandru.bugarin@gmail.com>
  */
-class IndexController extends Controller {
+class HomeController extends Controller {
 
+    /**
+     * Render home page.
+     * 
+     * @return mixed
+     */
     public function index() {
-        return view('pages.print-ticket.index');
+        return view('pages.dashboard.home.index');
     }
 
 }
