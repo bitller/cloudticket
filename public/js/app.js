@@ -24061,6 +24061,10 @@ var _Register = require('./components/Register.vue');
 
 var _Register2 = _interopRequireDefault(_Register);
 
+var _LogIn = require('./components/LogIn.vue');
+
+var _LogIn2 = _interopRequireDefault(_LogIn);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.$ = window.jQuery = require('jquery');
@@ -24087,11 +24091,32 @@ new Vue({
    * Application components.
    */
   components: {
-    'register': _Register2.default
+    'register': _Register2.default,
+    'login': _LogIn2.default
   }
 });
 
-},{"./components/Register.vue":31,"bootstrap-sass":1,"jquery":2,"vue":29,"vue-resource":18}],31:[function(require,module,exports){
+},{"./components/LogIn.vue":31,"./components/Register.vue":32,"bootstrap-sass":1,"jquery":2,"vue":29,"vue-resource":18}],31:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n\n<div class=\"row\">\n    <div class=\"col-md-4 col-md-offset-4 text-center logo\">\n        <span class=\"auth-logo-icon glyphicon glyphicon-tag\"></span>&nbsp;\n        <span class=\"auth-logo\">Cloud Ticket</span>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-4 col-md-offset-4\">\n        <div class=\"well custom-well\">\n            <div class=\"row\">\n                <div class=\"col-md-10 col-md-offset-1\">\n\n                    <div class=\"col-md-12 text-center new-account\">\n                        <h2 class=\"blue-grey-text\">Conectați-vă</h2>\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control input-lg custom-input\" placeholder=\"Adresa dumneavoastră de email\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"password\" class=\"form-control input-lg custom-input\" placeholder=\"Parola contului\">\n                    </div>\n                    <div class=\"btn btn-success btn-block btn-lg\">Conectați-vă</div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-12 text-center\">\n        <span class=\"white-text\"><a href=\"/register\"><strong>Nu aveți cont?</strong></a></span>\n    </div>\n</div>\n\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  var id = "/var/www/html/cloudticket/resources/assets/js/components/LogIn.vue"
+  if (!module.hot.data) {
+    hotAPI.createRecord(id, module.exports)
+  } else {
+    hotAPI.update(id, module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":29,"vue-hot-reload-api":4}],32:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24099,7 +24124,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {};
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n\n<div class=\"row\">\n    <div class=\"col-md-4 col-md-offset-4 text-center logo\">\n        <span class=\"auth-logo-icon glyphicon glyphicon-tag\"></span>&nbsp;\n        <span class=\"auth-logo\">Cloud Ticket</span>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-6 col-md-offset-3\">\n        <div class=\"well custom-well\">\n\n            <div class=\"row\">\n            <div class=\"col-md-10 col-md-offset-1\">\n                <div class=\"col-md-12 text-center new-account\">\n                    <h2 class=\"blue-grey-text\">Cont nou</h2>\n                </div>\n                <div class=\"form-group\">\n                    <input type=\"text\" class=\"form-control input-lg custom-input\" placeholder=\"Numele cinematografului\">\n                </div>\n                <div class=\"form-group\">\n                    <input type=\"text\" class=\"form-control input-lg custom-input\" placeholder=\"Adresa dumneavoastră de email\">\n                </div>\n                <div class=\"form-group\">\n                    <input type=\"password\" class=\"form-control input-lg custom-input\" placeholder=\"Parola contului\">\n                </div>\n                <div class=\"btn btn-success btn-block btn-lg\">Creează contul</div>\n\n                <h5 class=\"light-grey-text\">Continuând, sunteţi de acord cu <a href=\"/terms\">Termenii și Condițiile</a> noastre.</h5>\n            </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-12 text-center\">\n        <span class=\"white-text\">Deja aveți cont? <a href=\"#\"><strong>Conectați-vă</strong></a></span>\n    </div>\n</div>\n\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n\n<div class=\"row\">\n    <div class=\"col-md-4 col-md-offset-4 text-center logo\">\n        <span class=\"auth-logo-icon glyphicon glyphicon-tag\"></span>&nbsp;\n        <span class=\"auth-logo\">Cloud Ticket</span>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-6 col-md-offset-3\">\n        <div class=\"well custom-well\">\n\n            <div class=\"row\">\n                <div class=\"col-md-10 col-md-offset-1\">\n                    <div class=\"col-md-12 text-center new-account\">\n                        <h2 class=\"blue-grey-text\">Cont nou</h2>\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control input-lg custom-input\" placeholder=\"Numele cinematografului\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control input-lg custom-input\" placeholder=\"Adresa dumneavoastră de email\">\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"password\" class=\"form-control input-lg custom-input\" placeholder=\"Parola contului\">\n                    </div>\n                    <div class=\"btn btn-success btn-block btn-lg\">Creează contul</div>\n\n                    <h5 class=\"light-grey-text\">Continuând, sunteţi de acord cu <a href=\"/terms\">Termenii și Condițiile</a> noastre.</h5>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-12 text-center\">\n        <span class=\"white-text\">Deja aveți cont? <a href=\"/login\"><strong>Conectați-vă</strong></a></span>\n    </div>\n</div>\n\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)

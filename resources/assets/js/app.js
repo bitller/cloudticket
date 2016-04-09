@@ -11,6 +11,7 @@ Vue.config.debug = true;
 
 // Import components
 import Register from './components/Register.vue';
+import LogIn from './components/LogIn.vue';
 
 new Vue({
     /**
@@ -23,5 +24,6 @@ new Vue({
      */
     components: {
         'register': Register,
+        'login': LogIn
     }
 });
